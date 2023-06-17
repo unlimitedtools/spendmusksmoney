@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spend Elon Musks Money</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .top-section img {
+      max-width: 100px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .product-card {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product-card input[type="number"] {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .receipt-section {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .receipt-item {
+      margin-bottom: 10px;
+    }
+
+    .receipt-item p {
+      margin: 0;
+    }
+
+    .total-price {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .total-spent {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-section">
+      <img src="elon.jpg" alt="Wallet">
+      <h1>Spend Elon Musks' Money</h1>
+    </div>
+    <p>Total: $200,000,000,000</p>
+
+    <div class="grid">
+      <div class="product-card">
+        <img src="Chicken Royale-01_2.png" alt="Product 1">
+        <h3>Chicken Royal</h3>
+        <p>Price: $1</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+
+      <!-- Add more product cards as needed -->
+      <div class="product-card">
+        <img src="sprite.png" alt="Product 2">
+        <h3>Sprite Pack</h3>
+        <p>Price: $8</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="tick.png" alt="Product 2">
+        <h3>Movie Ticket</h3>
+        <p>Price: $12</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="rich.png" alt="Product 2">
+        <h3>Book</h3>
+        <p>Price: $15</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="steak.png" alt="Product 2">
+        <h3>Steak</h3>
+        <p>Price: $40</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="336-3367006_grand-theft-auto-v-update-1-pc-gta.png" alt="Product 2">
+        <h3>Video Game</h3>
+        <p>Price: $57</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="unnamed.png" alt="Product 2">
+        <h3>Year of Prime Video</h3>
+        <p>Price: $139</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="air-jordans-removebg-preview.png" alt="Product 2">
+        <h3>Air Jordans</h3>
+        <p>Price: $125</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="image-removebg-preview.png" alt="Product 2">
+        <h3>AirPods</h3>
+        <p>Price: $199</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="Microsoft-Xbox-Series-X-Console-removebg-preview.png" alt="Product 2">
+        <h3>Gaming Console</h3>
+        <p>Price: $499</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="71e0d1acdf0f4ab35bf7de4eed250633.png" alt="Product 2">
+        <h3>Drone</h3>
+        <p>Price: $700</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="smartphone.jpg" alt="Product 2">
+        <h3>Smartphone</h3>
+        <p>Price: $800</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="bike-removebg-preview.png" alt="Product 2">
+        <h3>Bike</h3>
+        <p>Price: $800</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="horse.png" alt="Product 2">
+        <h3>Horse</h3>
+        <p>Price: $3000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="acre-of-farmland.jpg" alt="Product 2">
+        <h3>Acre  of Farmland</h3>
+        <p>Price: $3700</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="luxury-wine-removebg-preview.png" alt="Product 2">
+        <h3>Luxury Wine</h3>
+        <p>Price: $7000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="diamond-ring-removebg-preview.png" alt="Product 2">
+        <h3>Diamond Ring</h3>
+        <p>Price: $10000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="jetski.png" alt="Product 2">
+        <h3>Jet Ski</h3>
+        <p>Price: $12000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="rolex.png" alt="Product 2">
+        <h3>Rolex</h3>
+        <p>Price: $25000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="ford.png" alt="Product 2">
+        <h3>Ford F-150</h3>
+        <p>Price: $42000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="tesla-removebg-preview.png" alt="Product 2">
+        <h3>Tesla</h3>
+        <p>Price: $75000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="ferrari-removebg-preview.png" alt="Product 2">
+        <h3>Ferrari</h3>
+        <p>Price: $250000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="house.png" alt="Product 2">
+        <h3>Family house</h3>
+        <p>Price: $300000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="gold-bar-removebg-preview.png" alt="Product 2">
+        <h3>Gold Bar</h3>
+        <p>Price: $700000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="mcdonalds-franchise.jpg" alt="Product 2">
+        <h3>McDonalds Franchise</h3>
+        <p>Price: $1500000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="yacht.png" alt="Product 2">
+        <h3>Yacht</h3>
+        <p>Price: $25000000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="apache-helicopter-removebg-preview.png" alt="Product 2">
+        <h3>Apache Helicopter</h3>
+        <p>Price: $31000000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="mansion.jpg" alt="Product 2">
+        <h3>Mansion</h3>
+        <p>Price: $45000000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="im-637184-removebg-preview.png" alt="Product 2">
+        <h3>Private Jet</h3>
+        <p>Price: $71500000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="images-removebg-preview.png" alt="Product 2">
+        <h3>Skyscraper</h3>
+        <p>Price: $850000000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="maxresdefault-removebg-preview.png" alt="Product 2">
+        <h3>Cruise Ship</h3>
+        <p>Price: $1000000000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+      <div class="product-card">
+        <img src="s-l600-removebg-preview.png" alt="Product 2">
+        <h3>NBA Team</h3>
+        <p>Price: $850000000</p>
+        <input type="number" class="product-quantity" min="0" value="0">
+      </div>
+
+
+      <!-- Add more product cards as needed -->
+
+    </div>
+
+    <div class="receipt-section" id="receiptSection">
+      <h2>Receipt</h2>
+      <div class="receipt-items" id="receiptItems"></div>
+      <p class="total-price">Total Price: $<span id="totalPrice">0</span></p>
+      <p class="total-spent">Amount Left in Wallet: $<span id="totalSpent">200,000,000,000</span></p>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" onclick="generateReceipt()">Generate Receipt</button>
+      <button class="btn" onclick="exportReceipt()">Export as PDF</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+  <script>
+    function generateReceipt() {
+      const walletTotal = 200000000000; // Wallet total amount
+      const productCards = document.querySelectorAll('.product-card');
+      const receiptItems = [];
+      let totalAmount = 0;
+
+      productCards.forEach((card) => {
+        const productName = card.querySelector('h3').textContent;
+        const price = parseFloat(card.querySelector('p').textContent.replace(/[^0-9.]/g, ''));
+        const quantity = parseInt(card.querySelector('.product-quantity').value);
+        const subtotal = quantity * price;
+
+        if (quantity > 0) {
+          receiptItems.push({
+            productName,
+            quantity,
+            price,
+            subtotal,
+          });
+          totalAmount += subtotal;
+        }
+      });
+
+      const receiptItemsContainer = document.getElementById('receiptItems');
+      const totalPriceElement = document.getElementById('totalPrice');
+      const totalSpentElement = document.getElementById('totalSpent');
+      const receiptSection = document.getElementById('receiptSection');
+
+      receiptItemsContainer.innerHTML = '';
+      totalPriceElement.textContent = totalAmount.toFixed(2);
+      totalSpentElement.textContent = (walletTotal - totalAmount).toFixed(2);
+
+      if (receiptItems.length > 0) {
+        receiptItems.forEach((item) => {
+          const itemElement = document.createElement('div');
+          itemElement.classList.add('receipt-item');
+          itemElement.innerHTML = `
+            <p>${item.productName}: ${item.quantity} x $${item.price.toFixed(2)} = $${item.subtotal.toFixed(2)}</p>
+          `;
+          receiptItemsContainer.appendChild(itemElement);
+        });
+
+        receiptSection.style.display = 'block';
+      } else {
+        receiptSection.style.display = 'none';
+        alert('Please select at least one product quantity.');
+      }
+    }
+
+    function exportReceipt() {
+      const receiptItemsContainer = document.getElementById('receiptItems');
+      const receiptItems = receiptItemsContainer.innerHTML;
+      const totalPrice = document.getElementById('totalPrice').textContent;
+      const totalSpent = document.getElementById('totalSpent').textContent;
+
+      const docDefinition = {
+        content: [
+          { text: 'Receipt', style: 'header' },
+          { text: 'Items:', style: 'subheader' },
+          { html: receiptItems },
+          { text: `Total Price: $${totalPrice}`, style: 'total' },
+          { text: `Amount Left in Wallet: $${totalSpent}`, style: 'total' },
+        ],
+        styles: {
+          header: {
+            fontSize: 18,
+            bold: true,
+            margin: [0, 0, 0, 10],
+            alignment: 'center',
+          },
+          subheader: {
+            fontSize: 14,
+            bold: true,
+            margin: [0, 10, 0, 5],
+          },
+          total: {
+            fontSize: 14,
+            bold: true,
+            margin: [0, 10, 0, 0],
+            alignment: 'right',
+          },
+        },
+      };
+
+      pdfMake.createPdf(docDefinition).download('receipt.pdf');
+    }
+  </script>
+</body>
+
+</html>
